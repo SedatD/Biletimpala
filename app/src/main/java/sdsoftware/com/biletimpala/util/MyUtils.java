@@ -1,11 +1,18 @@
 package sdsoftware.com.biletimpala.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import java.util.Calendar;
+
+import sdsoftware.com.biletimpala.activity.MainActivity;
 
 /**
  * Created by SD
@@ -14,7 +21,7 @@ import java.util.Calendar;
 
 public class MyUtils {
 
-    private static final String TAG = "MyUtils";
+    private static final String TAG = MyUtils.class.getSimpleName();
 
     public static int dpToPx(float dp) {
         float density = Resources.getSystem().getDisplayMetrics().density;
